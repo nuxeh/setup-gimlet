@@ -7,6 +7,8 @@ git config --global alias.co checkout
 
 git config --global core.editor vim
 
+# Set up bash aliases
+if ! grep 'alias gg' ~/.bash_aliases > /dev/null; then
 cat >> ~/.bash_aliases << EOF
 alias gg="git grep"
 alias gs="git status"
@@ -14,7 +16,8 @@ alias gc="git diff --cached"
 alias gd="git diff"
 EOF
 
-. ~/.bashrc
+	. ~/.bashrc
+fi
 
 # SMTP support
 read -p 'SMTP username? ' username
