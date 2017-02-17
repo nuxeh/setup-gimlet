@@ -14,6 +14,7 @@ alias gg="git grep"
 alias gs="git status"
 alias gc="git diff --cached"
 alias gd="git diff"
+alias gb="git branch"
 EOF
 
 	. ~/.bashrc
